@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- BODY -->
+{% block content %}
+<header id="recommend-header">
+    <div class="container">
+        <div>
+            <a href="{% url 'home' %}"><img id="recommend-logo" src="{% static 'main/images/logo.png' %}" alt="Gamify Logo"></a>
+            <a href="{% url 'home' %}"><img id="recommend-banner" src="{% static 'main/images/banner.png' %}" alt="Gamify Title"></a>
+            <!-- To be added later: <img id="drop-btn" src="{% static 'main/images/drop.png' %}" alt="Menu Button"> -->
+            <div id="clr"></div>
+        </div>
+        
+
+    </div>
+</header>
+
+<div class="container">
+    <div class="h1-div">
+        <h1>RECOMMENDED GAMES BASED ON:</h1>
+        <h1>
+            {{ user_titles.0 }}
+
+            {% if user_titles.1 %}
+            | {{ user_titles.1 }}
+            {% endif %}
+            
+            {% if user_titles.2 %}
+            | {{ user_titles.2 }}
+            {% endif %}
+         </h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="table-div" style="overflow-x:auto;">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>GAME</th>
+                    <th>GENRES</th>
+                    <th>SYSTEMS</th>
+                    <th>DEVELOPERS</th>
+                    <th>RATING (METASCORE)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for list in lists %}
+                <tr>
+                    <td>{{ list.0 }}</td>
+                    <td>{{ list.1 }}</td>
+                    <td>{{ list.2 }}</td>
+                    <td>{{ list.3 }}</td>
+                    <td>{{ list.4 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer id="recommend-footer">
+
+</footer>
+
+{% endblock %}

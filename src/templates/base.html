@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gamify</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/logo.png' %}">
+</head>
+
+<body>
+    <div class="query-view">
+        {% block content %}
+        <header id="main-header">
+            <div class="container">
+
+                <div>
+                    <img id="main-logo" src= "{% static 'main/images/logo.png' %}" alt="Gamify Logo"/>
+                </div>
+
+                <div>
+                    <img id="main-banner" src="{% static 'main/images/banner.png' %}" alt="Gamify Title">
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            
+            <div class="h1-main">
+                <h1>
+                    INPUT 1 TO 3 GAMES
+                </h1>
+            </div>
+        </div>
+
+        <section id="main-body">
+            <div class="container">
+                <form id="input-form" action="." method="POST" autocomplete="off"> {% csrf_token %}
+                    
+                    <div class="autocomplete">
+                        {{form.firstGame}}
+
+                        {{form.secondGame}}
+
+                        {{form.thirdGame}}
+                    </div>
+
+                    <div class="clr"></div>
+
+                    <input class="submit-btn" type="submit" value="SUBMIT" />
+
+                </form>
+            </div>
+        </section>
+        
+        
+        <footer id="main-footer">
+        </footer>
+        {% endblock %}
+    </div>
+
+    <script src="{% static 'main/scripts/main.js' %}"></script>
+
+</body>
+
+</html>

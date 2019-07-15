@@ -1,0 +1,365 @@
+body{
+    margin:0;
+    background-color: #fffff6; 
+}
+.container{
+    width:75%;
+    margin:auto;
+}
+
+.clr{
+	clear:both;
+}
+
+/*HEADERS*/
+#main-header{
+    margin-top: 60px;
+}
+
+#recommend-header{
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+#main-logo{
+    width: 27.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-banner{
+    width: 22.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+
+}
+
+#recommend-logo{
+    display: inline-block;
+    width: 6.5%;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#recommend-banner{
+    width: 11%;
+    display: inline-block;
+    margin-left: 3px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#drop-btn{
+    display: block;
+    position: relative;
+    width: 2%;
+    float:right;
+    margin-right:40px;
+    margin-top:30px;
+}
+
+
+
+.h1-main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #303030;
+    font-family: segoe ui,helvetica, sans-serif;
+    text-align: center;
+    margin-top:-25px;
+    margin-bottom:-15px;
+}
+
+.h1-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #303030;
+    font-family: segoe ui,helvetica, sans-serif;
+    text-align: center;
+}
+
+.h1-main>h1{
+    font-weight: 350;
+}
+
+
+.h1-div>h1{
+    font-size: 225%;
+    font-weight: 350;
+}
+
+
+/*FORM*/
+#main-body{
+    padding:10px;
+    padding-bottom:60px;
+}
+
+#input-form{
+    position: relative;
+}
+.first-box{
+    display: block;
+    float: left;
+    min-width: 25%;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    margin-left: 7.8%;
+    margin-right: 3%;
+    font-family: segoe ui,helvetica, sans-serif;
+    font-size: 120%;
+    border-radius: 5px;
+}
+
+.second-box{
+    display: block;
+    float: left;
+    min-width: 25%;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    margin-right: 3%;
+    font-family: segoe ui,helvetica, sans-serif;
+    font-size: 120%;
+    border-radius: 5px;
+}
+
+.third-box{
+    display:block;
+    min-width: 25%;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    font-family: segoe ui,helvetica, sans-serif;
+    font-size: 120%;
+    border-radius: 5px;
+}
+
+#first-div{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.submit-btn{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    min-width: 10%;
+    height: 40px;
+    background-color: #BC3908;
+    color: #fff;
+    font-size: 130%;
+    font-family: segoe ui,helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+.submit-btn:hover{
+    background-color: rgb(204, 99, 61);
+}
+
+/* AUTOCOMPLETE */
+.autocomplete{
+  /*the container must be positioned relative:*/
+  position: relative;
+}
+
+ .autocomplete-1-items{
+  position: absolute;
+  border: 1px solid #000;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  margin-top: 55px;
+  /*position the autocomplete items to be the same width as the container:*/
+  width: 26.5%;
+  top: 0;
+  bottom: 20%;
+  left: 7.5%;
+  right: 0;
+}
+
+ .autocomplete-2-items{
+  position: absolute;
+  border: 1px solid #000;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  margin-top: 55px;
+  /*position the autocomplete items to be the same width as the container:*/
+  width: 26.5%;
+  top: 0;
+  bottom: 20%;
+  left: 36.85%;
+  right: 0;
+}
+
+ .autocomplete-3-items{
+  position: absolute;
+  border: 1px solid #000;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  margin-top: 55px;
+  /*position the autocomplete items to be the same width as the container:*/
+  width: 26.5%;
+  top: 0;
+  bottom: 20%;
+  left: 66.1%;
+  right: 0;
+}
+
+.autocomplete-1-items div, .autocomplete-2-items div,.autocomplete-3-items div{
+  padding: 20px;
+  cursor: pointer;
+  background-color: #ffffff; 
+  border-bottom: 1px solid #d4d4d4; 
+  font-family: segoe ui,helvetica, sans-serif;
+}
+.autocomplete-1-items div:hover,.autocomplete-2-items div:hover,.autocomplete-3-items div:hover{
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #BC3908 !important; 
+  color: #ffffff; 
+}
+
+/* Table */
+table{
+    border-collapse: collapse;
+    border-spacing: 20px;
+    padding-bottom: 50px;
+}
+
+thead{
+    background: #BC3908;
+    color: #fff;
+    font-family: segoe ui,helvetica, sans-serif;
+}
+
+th {
+    padding: 15px;
+}
+
+tbody{
+    font-family: segoe ui,helvetica, sans-serif;
+    
+}
+
+tbody>tr:nth-child(even){
+    background:#f5d3ce;
+}
+
+td{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 120%;
+    text-align: center;
+}
+
+td:nth-child(1){
+    font-weight: bold;
+}
+
+/* Footer */
+#main-footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px; 
+    background:#fffff6;
+}
+
+#recommend-footer{
+    bottom:0;
+    width:100%;
+    height:100px; 
+}
+
+@media(max-width:1200px){
+    body{
+        margin-top: 15%;
+        margin-bottom: auto;
+    }
+
+    #main-logo{
+    min-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #main-banner{
+    min-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    }
+
+    .h1-main{
+        width:70%;
+        margin-top: 10px;
+        margin-bottom: -40px;
+    }
+
+     .h1-main>h1{
+        font-size: 175%;
+    }
+
+	.first-box, .second-box, .third-box{
+        display: block;
+		width: 70%;
+        float:none;
+        margin: 2em auto;
+    }
+
+    .submit-btn{
+        display: block;
+		width: 20%;   
+    }
+
+    .autocomplete-items{
+        width: 70%;
+    }
+    
+    #main-footer{
+        background-color: #fffff6;
+        height: 0px;
+    }
+
+     .autocomplete-1-items{
+        width: 72%;
+        top: 0;
+        bottom: 20%;
+        left: 14%;
+        right: 0;
+    }
+
+    .autocomplete-2-items{
+        width: 72%;
+        top: 39%;
+        bottom: 0;
+        left: 14%;
+        right: 0;
+    }
+
+    .autocomplete-3-items{
+        width: 72%;
+        top: 78%;
+        bottom: 0;
+        left: 14%;
+        right: 0;
+    }
+
+}
