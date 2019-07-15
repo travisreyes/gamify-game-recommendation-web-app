@@ -4,11 +4,11 @@ Gamify - A video game recommendation web app made with DJANGO.
 
 All project templates and files are contained in 'src/' folder.
 
-'main/' folder - contains all created DJANGO web apps
+'src/main/' folder - contains all created DJANGO web apps
 
-'template' folder - contains all html, css, and js files 
+'src/template' folder - contains all html, css, and js files 
 
-'static' folder- contains all media files used
+'src/static' folder- contains all media files used
 
 Related Repositories:
 
