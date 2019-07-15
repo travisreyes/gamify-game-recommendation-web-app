@@ -1,6 +1,6 @@
 # gamify-game-recommendation-web-app
 
-Gamify - A video game recommendation web app made in DJANGO. 
+Gamify - A video game recommendation web app made with DJANGO. 
 
 All project templates and files are contained in 'src/' folder.
 
